@@ -323,6 +323,7 @@ footer p{
 .commands {
     display: flex;
     align-items: center;
+    
 }
 
 .in-progress>p {
