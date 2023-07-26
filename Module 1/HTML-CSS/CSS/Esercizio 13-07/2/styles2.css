@@ -1,0 +1,52 @@
+p:nth-of-type(1)>strong:nth-of-type(2) {
+    font-style: italic;
+}
+
+p:nth-of-type(1)>i:hover {
+    font-weight: bold;
+    color: gold;
+}
+
+p:nth-of-type(2)>span {
+    font-family: monospace;
+    border: 1px solid #eaecf0;
+    border-radius: 2px;
+    background-color: #f8f9fa;
+    color: #000000;
+    padding: 1px 4px;
+    margin: 5px;
+}
+
+li:nth-child(2n) {
+    text-decoration: underline;
+}
+
+span+cite {
+    font-weight: bold;
+}
+
+h3+* {
+    margin-top: 5px;
+}
+
+h3 {
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+cite::before{
+    content: "❝";
+}
+
+cite::after{
+    content: "❞";
+}
+
+.loremsentence{
+    padding: 10px;
+    margin: 20px;
+}
+
+.loremsentence:hover{
+    background-color: red;
+}

@@ -1,0 +1,25 @@
+.corsivo{
+    font-style: italic;
+}
+
+p > i:hover {
+    font-weight: bold;
+    color: gold;
+}
+
+.code{
+    border: 1px solid #eaecf0;
+    border-radius: 2px;
+    background-color: #f8f9fa;
+    color: #000000;
+    padding: 1px 4px;
+    font-family: monospace;
+}
+
+.pari{
+    text-decoration: underline;
+}
+
+span + cite{
+    font-weight: bold;
+}

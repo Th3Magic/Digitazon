@@ -1,0 +1,68 @@
+/* Selettore universale, per qualsiasi elemento della pagina html */
+
+* {
+    font-style: italic;
+}
+
+/* Selettore per tag */
+
+p {
+    color: green;
+}
+
+li {
+    font-size: 10px;
+}
+
+/* Selettore per classe */
+
+.bigtext{
+    font-size: 60px;
+}
+
+/* Selettore combinato per qualsiasi elemento li con la classe bigtext */
+
+.bigtext > li{
+    font-size: 60px;
+}
+
+/* Selettore combinato per qualsiasi elemento li in body */
+
+body li {
+    font-weight: bold;
+}
+
+/* Selettore per qualsiasi tag p o li nell'html*/
+
+p, li {
+    color: blue;
+}
+
+/* Selettore per ID (univoco) */
+
+#special-ingredient {
+    font-size: 20px;
+    color: gold;
+}
+
+/* Selettore per qualsiasi elemento h3 con classe bigtext */
+
+h3.bigtext {
+    font-size: 100px;
+}
+
+/* Selettore per attributo per qualsiasi elemento href con questo indirizzo */
+
+[href="https://www.google.com"] {
+    color: red;
+}
+
+/* Pseudo-classi */
+
+p:hover {
+    color: wheat;
+}
+
+li:first-child {
+    color: aqua;
+}

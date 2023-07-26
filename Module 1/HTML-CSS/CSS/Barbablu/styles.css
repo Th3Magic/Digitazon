@@ -1,0 +1,45 @@
+.avatar{
+    width: 70px;
+}
+
+p{
+    margin: 9px;
+    font-size: 13px;
+}
+
+.user-profile{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nickname{
+    display: flex;
+    flex-direction: column;
+}
+
+.barbablu{
+    display: flex;
+}
+
+.profile-pic{
+    width: 200px;
+}
+
+.profile-pic-container{
+    margin-left: auto;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    border: 3px solid grey;
+    border-radius: 2px;  
+    background-color: aquamarine;
+}
+
+ul > li{
+    font-size: 1.4em;
+    list-style-type: none;
+    border-right: 3px solid grey;
+    padding: 10px 25px;
+}

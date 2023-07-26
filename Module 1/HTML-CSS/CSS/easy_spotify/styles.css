@@ -1,0 +1,61 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: pink;
+}
+
+.side-bar{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.3;
+}
+
+.main-container{
+    display: flex;
+}
+
+.up-left{
+    border-bottom: 1px solid grey;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.up-right{
+    background-color: grey;
+}
+
+.down-right{
+    background-color: violet;
+}
+
+.songs{
+    display: flex;
+    flex-direction: column;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+}
+
+.songs > ul li{
+    display: inline-flex;
+    padding: 0 90px;
+}
+
+ul{
+    padding-inline-start: 5px;
+}
+
+.up-right > p{
+    margin-bottom: 9px;
+}

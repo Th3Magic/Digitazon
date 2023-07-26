@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <header>
+        <div class="page-scroll">
+            <span class="back">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+            </span>
+            <span class="forward">
+                <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+        </div>
+        <div class="search-bar">
+            <input id="searchQueryInput" type="text" placeholder="Search" />
+            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="user">
+            <div class="user-notify">
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+            </div>
+            <div class="user-message">
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="user-info">
+                <div class="user-img">
+                    <a href=""><img src="profile.jpeg" alt="Profile Picture" /></a>
+                </div>
+                <div class="name">
+                    <p>GABRIELE</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <nav class="side-nav">
+            <div class="actions-menu1">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>Home</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+                    <li><i class="fa-solid fa-swatchbook"></i>Your Library</li>
+                </ul>
+            </div>
+            <div class="actions-menu2">
+                <ul>
+                    <li><i class="fa-solid fa-plus"></i>Create Playlist</li>
+                    <li><i class="fa-brands fa-gratipay"></i>Liked Songs</li>
+                </ul>
+            </div>
+            <div class="playlist-menu">
+                <ul>
+                    <li>My Playlist</li>
+                    <li>Rap</li>
+                    <li>Gym</li>
+                    <li>Programming</li>
+                    <li>Relax</li>
+                    <li>Jazz</li>
+                    <li>My Playlist</li>
+                    <li>Rap</li>
+                    <li>Gym</li>
+                    <li>Programming</li>
+                    <li>Relax</li>
+                    <li>Jazz</li>
+                    <li>My Playlist</li>
+                    <li>Rap</li>
+                    <li>Gym</li>
+                    <li>Programming</li>
+                    <li>Relax</li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="cover-container">
+                <div class="cover">
+                    <p><i class="fa-regular fa-circle-check"></i>Verified Artist</p>
+                    <h1>Daft Punk</h1>
+                    <p>19,571,323 monthly listeners</p>
+                </div>
+            </div>
+            <div class="songs">
+                <i class="fa-solid fa-pause"></i>
+                <button class="button-follow"> + Follow </button>
+                <div class="download">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Download playlist</span>
+                </div>
+            </div>
+            <div class="popular-songs">
+                <div class="playlist">
+                    <h2>Popular</h2>
+                    <div class="details">
+                        <p>1</p>
+                        <p><img src="1.png" alt="Get Lucky"></p>
+                        <p>Get Lucky</p>
+                        <p>233,547,111</p>
+                        <p><i class="fa-solid fa-heart"></i></p>
+                        <p>2:47</p>
+                        <p>...</p>
+                    </div>
+                    <div class="details">
+                        <p>2</p>
+                        <p><img src="2.png" alt="One More Time"></p>
+                        <p>One More Time</p>
+                        <p>1,370,515,000</p>
+                        <p><i class="fa-solid fa-heart"></i></p>
+                        <p>5:37</p>
+                        <p>...</p>
+                    </div>
+                    <div class="details">
+                        <p>3</p>
+                        <p><img src="2.png" alt="Instant Crush (feat Julian Casablancas)"></p>
+                        <p>Instant Crush (feat Julian Casablancas)</p>
+                        <p>40,817,200</p>
+                        <p><i class="fa-solid fa-heart"></i></p>
+                        <p>4:25</p>
+                        <p>...</p>
+                    </div>
+                    <div class="details">
+                        <p>4</p>
+                        <p><img src="1.png" alt="Around The World<"></p>
+                        <p>Around The World</p>
+                        <p>470,827,410</p>
+                        <p><i class="fa-solid fa-heart"></i></p>
+                        <p>3:33</p>
+                        <p>...</p>
+                    </div>
+                    <div class="details">
+                        <p>5</p>
+                        <p><img src="1.png" alt="Around The World<"></p>
+                        <p>Around The World</p>
+                        <p>470,827,410</p>
+                        <p><i class="fa-solid fa-heart"></i></p>
+                        <p>3:33</p>
+                        <p>...</p>
+                    </div>
+                </div>
+                <aside>
+                    <div class="related-songs">
+                        <h2>Liked Songs</h2>
+                        <div class="liked-songs">
+                            <a href="#"><img src="liked.png" alt="Liked Songs"></a>
+                            <div class="description">
+                                <p>You've liked 36 songs</p>
+                                <p>By Daft Punk</p>
+                            </div>
+                        </div>
+                        <h2>Artisti Pick</h2>
+                        <div class="artist-pick">
+                            <a href="#"><img src="artist.jpg" alt="Artist Pick"></a>
+                            <div class="description">
+                                <p>Daft Punk Essentials</p>
+                                <p>Playlist</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="in-progress">
+            <div class="song-right-now">
+                <p>Song in progress</p>
+                <p>Album title</p>
+            </div>
+            <div class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <div class="song-commands">
+            <div class="commands">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-pause"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div class="time-song">
+                <p>00:00</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="volume">
+                <p>5:37</p>
+            </div>
+        </div>
+        <div class="player">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-volume-xmark"></i>
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="200" value="50" class="slider" id="song-time">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </footer>
+</body>
+
+</html>
