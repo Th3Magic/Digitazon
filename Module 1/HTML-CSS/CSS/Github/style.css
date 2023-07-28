@@ -1,0 +1,212 @@
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+    grid-template-areas:
+        "header header header"
+        "side-nav content aside"
+        "side-nav footer aside";
+}
+
+header {
+    grid-area: header;
+}
+
+.side-nav {
+    grid-area: side-nav;
+    border-right: 2px solid grey;
+    background-color: white;
+    height: 100vh;
+}
+
+main {
+    grid-area: content;
+    background-color: #c0f0f087;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: black;
+    border-bottom: 1px solid rgb(166, 164, 164);
+    background-color: #f8fcfc;
+}
+
+header>i,
+.user>i {
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-img img {
+    width: 40px;
+    height: 45px;
+    padding: 0 4px;
+}
+
+/* SEARCH-BAR */
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header>.search-bar {
+    margin-left: 40%;
+    width: 30%;
+}
+
+#searchQueryInput {
+    width: 100%;
+    height: 1.5rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    font-size: 1rem;
+}
+
+#searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}
+
+/* SIDE-NAV */
+
+.side-nav {
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    padding-inline-start: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    padding-top: 15px;
+}
+
+.account+h3+p {
+    padding: 4px;
+    border: 2px dotted grey;
+}
+
+/* MAIN */
+
+p {
+    padding-left: 20px;
+}
+
+.selection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 0 3px;
+    border-bottom: 1px solid grey;
+}
+
+.feedback {
+    display: flex;
+    margin-left: auto;
+}
+
+.feedback-color {
+    color: blue;
+}
+
+p>i {
+    padding: 0 3px;
+}
+
+.coding {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    grid-template-areas:
+        "repository-box introduce-box";
+}
+
+.introduce-box {
+    grid-area: introduce-box;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(97, 91, 91);
+}
+
+.repository-box {
+    grid-area: repository-box;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(97, 91, 91);
+}
+
+.repository-box>.search-bar {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.tools-area {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    grid-template-areas:
+        "githubdesktop copilot";
+}
+
+.githubdesktop {
+    grid-area: githubdesktop;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(97, 91, 91);
+}
+
+.copilot {
+    grid-area: copilot;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(97, 91, 91);
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+}
+
+.link {
+    display: flex;
+    margin-left: 30%;
+}
+
+ul li {
+    list-style: none;
+}
+
+aside {
+    grid-area: aside;
+    height: 100vh;
+    border-left: 2px solid grey;
+}

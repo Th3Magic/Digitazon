@@ -1,0 +1,255 @@
+p,i{
+    padding: 1px;
+    margin: 2px 2px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 1px solid rgb(182, 177, 177);
+    background-color: #ffffff;
+}
+
+header > i{
+    padding-left: 17px;
+}
+
+header > a:first-of-type > img{
+    width: 80px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.user-img > a > img{
+    width: 30px;
+    padding: 0 4px;
+}
+
+/* SEARCH-BAR */
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header>.search-bar {
+    margin-left: 20%;
+    width: 40%;
+}
+
+#searchQueryInput {
+    width: 100%;
+    height: 1.5rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    font-size: 1rem;
+}
+
+#searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main{
+    display: grid;
+    grid-template-columns: 150px 650px 300px 150px;
+    gap: 20px;
+    grid-template-areas: 
+    ". content aside .";
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+aside{
+    grid-area: aside;
+    margin-top: 30px;
+}
+
+.news-box{
+    display: grid;
+    grid-template-columns: 40px auto;
+    width: 640px;
+    height: 400px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.news-box:hover{
+    border: 1px solid black;
+}
+
+.vote{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 390px;
+    background-color: rgba(191, 184, 184, 0.354);
+    flex: 1;
+    padding-top: 10px;
+}
+
+.vote > i:first-of-type:hover{
+    background-color: rgb(196, 193, 193);
+    color: blue;
+}
+
+.vote > i:nth-of-type(2):hover{
+    background-color: rgb(196, 193, 193);
+    color: red;
+}
+
+.link{
+    display: flex;
+    align-items: baseline;
+    margin: 5px;
+}
+
+.link > a > img{
+    width: 20px;
+    margin-right: 4px;
+}
+
+.join{
+    margin-left: auto;
+}
+
+.title > h3{
+    margin: 5px;
+    font-weight:normal;
+    text-align: justify;
+}
+
+h3 > button{
+    margin-left: 10px;
+    background-color: rgb(55, 198, 227);
+    border-radius: 10px;
+    color: rgb(82, 79, 79);
+}
+
+h3 > button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.text{
+    height: 272px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    margin: 4px;
+}
+
+.comments{
+    height: 37px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.comments > p:hover{
+    background-color: rgb(196, 193, 193);
+}
+
+.aside-box{
+    width: 350px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.try-now > button{
+    background-color: orangered;
+    border-radius: 17px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20%;
+    color: white;
+}
+
+.try-now > button:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.home-img > p > img{
+    height: 60px;
+    width: 160px;
+}
+
+.create-post{
+    background-color: rgb(36, 35, 35);
+    border-radius: 17px;
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10%;
+    color: white;
+}
+
+.create-community{
+    background-color: rgb(255, 255, 255);
+    border-radius: 17px;
+    border: 1px solid black;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10%;
+    color: rgb(0, 0, 0);
+}
+
+.create-post:hover, .create-community:hover{
+    cursor: pointer;
+}
+
+.abouts{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 15px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.abouts > .row:nth-of-type(1), .abouts > .row:nth-of-type(3), .abouts > .row:nth-of-type(6){
+    border-bottom: 1px solid black;
+}
