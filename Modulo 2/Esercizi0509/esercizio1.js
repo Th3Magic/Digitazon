@@ -4,12 +4,12 @@
 function differentSets(a, b){
     let res = []
     for(let i = 0; i < a.length; i++){
-        if(b.indexOf(a[i]) === -1 && res.indexOf(a[i])){ // elementi che sono solo in a
+        if(b.indexOf(a[i]) === -1){ // elementi che sono solo in a
             res.push(a[i])
         }
     }
     for(let i = 0; i < b.length; i++){
-        if(a.indexOf(b[i]) === -1 && res.indexOf(b[i])){ // elementi che sono solo in b
+        if(a.indexOf(b[i]) === -1 && res.indexOf(b[i]) === -1){ // elementi che sono solo in b
             res.push(b[i])
         }
     }
