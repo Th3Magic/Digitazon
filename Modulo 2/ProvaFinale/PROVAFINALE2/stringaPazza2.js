@@ -4,39 +4,40 @@
  // nel caso nessuna sia vera ritorno false perchè la stringa non è pazza
 
  function stringaPazza(string){
-    let soggetti = ['Lui', 'Lei', 'Egli', 'Ella']
     if(string.includes('Church') || string.includes('mare')){
         return false
     }
+    return isMad(string)
+ }
+
+ function isMad(string){
     if(string.includes('Cthulhu')){
         return true
     }
+
     let words = string.split(' ')
-    let lastWord = words.pop()
-    if(lastWord == '?!?'){
-        return true
-    }
     let firstWord = words.shift()
-    let firstLast = firstWord + lastWord
-    if(firstLast.includes('are') || firstLast.includes('ere') || firstLast.includes('ire')){
+    let lastWord = words.pop()
+
+    if(lastWord.endsWith('?!?')){
         return true
     }
-    if(firstWord.match(/[“\,\.\!\?\:\;\-\~]/)){
+
+    let ending =['are', 'ere', 'ire']
+    if(ending.some(s => firstWord.endsWith(s)) && ending.some(s => lastWord.endsWith(s))){
         return true
     }
-    let hasASubject = false
-    for(let i = 0; i < soggetti.length; i++){
-        if(string.includes(soggetti[i])){
-            hasASubject = true
-            return false
-        }
+
+    if(firstWord[0].match(/[“\,\.\!\?\:\;\-\~]/)){
+        return true
     }
-    
-    if(!hasASubject){
+
+    let soggetti = ['Lui', 'Lei', 'Egli', 'Ella']
+    if(!soggetti.some(s => string.includes(s))){
         return true
     }
 
     return false
  }
-
- console.log(stringaPazza('~ Papa’, come sta Church? ~'))
+ 
+console.log(stringaPazza('boh lui non lo so'))

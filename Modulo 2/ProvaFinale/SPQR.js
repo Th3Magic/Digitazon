@@ -45,7 +45,7 @@ function spqr(n){
         if((n == 400 || n == 900) && mapKeys.indexOf(n +1)){
             return res += map['100'] + map[n + 100]
         }
-        if(nLength === mapKeys[i].length && keyNumber <= n){
+        if(keyNumber <= n){
             n = n - keyNumber
             let newstring = '' + n
             nLength = newstring.length 
@@ -56,4 +56,4 @@ function spqr(n){
     return res
 }
 
-console.log(spqr(9))
+console.log(spqr(29))
